@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["hardhat.config.ts", "scripts/**/*.ts", "web/lib/mm/**/*.ts"],
+  "exclude": ["test", "node_modules", "artifacts", "cache", "typechain-types"]
+}

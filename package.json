@@ -1,0 +1,24 @@
+{
+  "name": "symbasis-mm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone Symbasis market-making simulator for Horizen testnet",
+  "scripts": {
+    "compile": "hardhat compile",
+    "typecheck": "tsc --noEmit -p tsconfig.scripts.json",
+    "test": "hardhat test",
+    "mm:simulate": "ts-node scripts/mm-simulate.ts",
+    "mm:oracle:testnet": "hardhat run scripts/mm-oracle-bot.ts --network horizen_testnet",
+    "web:install": "npm --prefix web install",
+    "web:dev": "npm --prefix web run dev",
+    "web:build": "npm --prefix web run build",
+    "web:typecheck": "npm --prefix web run typecheck"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "dotenv": "^17.2.2",
+    "hardhat": "^2.26.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
